@@ -1,36 +1,25 @@
-def isinteger(_val = "noone"):
-    if _val == "noone":
-        return -1
-    try:
-        _val -= 1
-        return True
-    except ValueError:
-        return False
-
-
-class Player:
+class Hero:
     def __init__(self, name, hp):
         self.name = name
         self.hp = hp
-        if isinteger(self.hp) == False:
-            return -1
-        pass
-    
+        
     def take_damage(self, amount):
         self.hp -= amount
-        if self.hp <= -9999:
-            self.hp = "SWOONED"
+        # if self.hp <= -9999:
+        # self.hp = "SWOONED"
+        # elif self.hp <= 0:
+        # self.hp = "DOWNED"
 
-Kris = Player("Kris", 240)
-Susie = Player("Kris", 320)
+Arthur = Hero("Arthur", 240)
+Morgan = Hero("Morgan", 320)
 
-print(f"Player Kris was instantiated! Starting at HP {Kris.hp}")
-print(f"Player Susie was instantiated! Starting at HP {Susie.hp}")  
+print(f"Player Arthur was instantiated! Starting at HP {Arthur.hp}")
+print(f"Player Morgan was instantiated! Starting at HP {Morgan.hp}")  
 
-damage_amnt = int(input("\nHow much damage should Kris get: "))
-Kris.take_damage(damage_amnt)
-damage_amnt = int(input("How much damage should Susie get: "))
-Susie.take_damage(damage_amnt)
+damage_amnt = 239
+Arthur.take_damage(damage_amnt)
+damage_amnt = 320
+Morgan.take_damage(damage_amnt)
 
-print(f"Kris took damage, their HP is now {Kris.hp}")    
-print(f"Susie took damage, their HP is now {Susie.hp}")   
+print(f"Arthur took damage, their HP is now {Arthur.hp}")    
+print(f"Morgan took damage, their HP is now {Morgan.hp}")   
