@@ -1,3 +1,6 @@
+#// wrapper
+def sdm(inp):
+    print(inp)
 class Patient:
     def __init__(self,name,bill_amount):
         self.__name = name
@@ -16,28 +19,40 @@ class Patient:
         print(f"Bill amount set to ${self.__bill_amount}")
     def calculate_bill(self):
         print(f"Final Bill: PHP {self.__bill_amount}")
+    def display_patient_type(self):
+        sdm("Patient Type: Regular Patient")
 class Senior_Patient(Patient):
     def __init__(self,name,bill_amount):
         super().__init__(name,bill_amount)
     def calculate_bill(self):
         other_bill = super().get_bill_amount()
         print(f"Final Bill: PHP {other_bill - (other_bill * 0.2)}")
+    def display_patient_type(self):
+        sdm("Patient Type: Senior Citizen")
 class PhilHealth_Patient(Patient):
     def __init__(self, name, bill_amount):
         super().__init__(name, bill_amount)
     def calculate_bill(self):
         other_bill = super().get_bill_amount()
         print(f"Final Bill: PHP {other_bill - (other_bill * 0.15)}")
+    def display_patient_type(self):
+        sdm("Patient Type: PhilHealth Member")
 print("---Hospital Billing System---\n")
 p1 = Patient("Formerhyde",15000.00)
 p1.get_name()
+p1.display_patient_type()
 p1.get_bill_amount()
 p1.calculate_bill()
 print()
 p2 = Senior_Patient("Maria Santos",15000.0)
 p2.get_name()
+p2.display_patient_type()
 p2.calculate_bill()
 print()
 p3 = PhilHealth_Patient("Pedro Reyes",15000.0)
 p3.get_name()
+p3.display_patient_type()
 p3.calculate_bill()
+
+
+        

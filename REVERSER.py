@@ -1,0 +1,10 @@
+ls = ["Kris_or_Thrash_63.png", "Kris_or_Thrash_62.png", "Kris_or_Thrash_61.png", "Kris_or_Thrash_60.png" ,"Kris_or_Thrash_59.png" ,"Kris_or_Thrash_58.png", "Kris_or_Thrash_57.png", "Kris_or_Thrash_56.png", "Kris_or_Thrash_55.png", "Kris_or_Thrash_54.png", "Kris_or_Thrash_53.png", "Kris_or_Thrash_52.png" ,"Kris_or_Thrash_51.png" ,"Kris_or_Thrash_50.png", "Kris_or_Thrash_49.png", "Kris_or_Thrash_48.png", "Kris_or_Thrash_47.png", "Kris_or_Thrash_46.png" ,"Kris_or_Thrash_45.png" ,"Kris_or_Thrash_44.png", "Kris_or_Thrash_43.png", "Kris_or_Thrash_42.png", "Kris_or_Thrash_41.png" ,"Kris_or_Thrash_40.png" ,"Kris_or_Thrash_39.png" ,"Kris_or_Thrash_38.png" ,"Kris_or_Thrash_37.png" ,"Kris_or_Thrash_36.png", "Kris_or_Thrash_35.png" ,"Kris_or_Thrash_34.png", "Kris_or_Thrash_33.png" ,"Kris_or_Thrash_32.png" ,"Kris_or_Thrash_31.png" ,"Kris_or_Thrash_30.png", "Kris_or_Thrash_29.png" ,"Kris_or_Thrash_28.png", "Kris_or_Thrash_27.png", "Kris_or_Thrash_26.png", "Kris_or_Thrash_25.png" ,"Kris_or_Thrash_24.png" ,"Kris_or_Thrash_23.png", "Kris_or_Thrash_22.png" ,"Kris_or_Thrash_21.png", "Kris_or_Thrash_20.png" ,"Kris_or_Thrash_19.png", "Kris_or_Thrash_18.png" ,"Kris_or_Thrash_17.png" ,"Kris_or_Thrash_16.png" ,"Kris_or_Thrash_15.png" ,"Kris_or_Thrash_14.png" ,"Kris_or_Thrash_13.png", "Kris_or_Thrash_12.png" ,"Kris_or_Thrash_11.png", "Kris_or_Thrash_10.png" ,"Kris_or_Thrash_9.png" ,"Kris_or_Thrash_8.png" ,"Kris_or_Thrash_7.png", "Kris_or_Thrash_6.png" ,"Kris_or_Thrash_5.png", "Kris_or_Thrash_4.png", "Kris_or_Thrash_3.png", "Kris_or_Thrash_2.png", "Kris_or_Thrash_1.png" ]
+newls = []
+print("Old List")
+print(ls)
+for i in range(len(ls)):
+    newls.append(ls[(len(ls)-1)-i])
+print("New List")
+for i in range(len(newls)):
+    print(f"\"{newls[i]}\"")
+// do not run cuz it was supposed to be for the game engine, GameMaker
