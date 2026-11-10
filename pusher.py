@@ -24,7 +24,7 @@ try:
     os.system("git push")
     os.system("cls")
     print("worked")
-except Exception:
+except Exception as e:
     log()
     fp = Path("history.txt")
     if fp.is_file():
