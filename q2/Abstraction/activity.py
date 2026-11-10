@@ -1,6 +1,6 @@
 from abc import ABC,abstractmethod
 from math import floor
-class Sensor:
+class Sensor(ABC):
     @abstractmethod
     def get_reading():
         pass
@@ -39,3 +39,7 @@ obj_phsensor = PHSensor()
 obj_tempsensor = TempSensor()
 print(obj_phsensor.get_reading())
 print(obj_tempsensor.get_reading())
+try:
+    mysensor = Sensor()
+except TypeError:
+    print("Error")
