@@ -20,6 +20,7 @@ finally:
     rn = rn.strftime("%B %d, %Y and %I:%M:%S %p")
     fp = Path("history.txt")
     if fp.is_file():
+        print("test")
         with open("history.txt","w") as file:
             file.write(f"Program ran with date: {rn}")
     else:
