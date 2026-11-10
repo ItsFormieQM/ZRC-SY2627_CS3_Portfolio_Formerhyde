@@ -7,6 +7,7 @@ try:
         os.system(f"git commit -m \"{msg}\"")
     else:
         os.system("git commit -m \"Auto push\"")
+    os.system("git push")
 except Exception:
     print("Something went wrong. Press Enter to Abort")
     input("")
