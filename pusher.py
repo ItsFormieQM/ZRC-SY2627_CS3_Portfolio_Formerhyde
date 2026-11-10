@@ -1,5 +1,6 @@
 import os 
 from datetime import datetime
+from pathlib import Path
 #// pusher
 try:
     os.system("git add .")
@@ -17,5 +18,10 @@ except Exception:
 finally:
     rn = datetime.now()
     rn = rn.strftime("%B %d, %Y and %I:%M:%S %p")
-    with open("history.txt","w") as file:
-        file.write(f"\nProgram ran with date: {rn}")
+    fp = Path("history.txt")
+    if fp.is_file():
+        with open("history.txt","w") as file:
+            file.write(f"Program ran with date: {rn}")
+    else:
+        with open("history.txt","a") as file:
+            file.write(f"Program ran with date: {rn}")
