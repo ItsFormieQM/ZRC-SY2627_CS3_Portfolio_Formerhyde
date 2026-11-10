@@ -1,4 +1,5 @@
 import os 
+from datetime import datetime
 #// pusher
 try:
     os.system("git add .")
@@ -13,6 +14,7 @@ try:
 except Exception:
     print("Something went wrong. Press Enter to Abort")
     input("")
-
-with open("test.txt","w") as file:
-    file.write("FORMERHYDE")
+finally:
+    rn = datetime.now()
+    with open("history.txt","w") as file:
+        file.write(f"\nProgram ran with date: {rn}")
