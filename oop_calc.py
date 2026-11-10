@@ -1,4 +1,4 @@
-# type:ignore
+
 import math
 import os
 
