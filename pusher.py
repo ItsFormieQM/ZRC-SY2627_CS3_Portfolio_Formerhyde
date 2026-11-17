@@ -1,7 +1,7 @@
 import os 
 from datetime import datetime
 from pathlib import Path
-#// pusher
+#// pusher, yes i wrote this myself with help from ai but i do know what this is executing
 def log():
     rn = datetime.now()
     rn = rn.strftime("%B %d, %Y and %I:%M:%S %p")
