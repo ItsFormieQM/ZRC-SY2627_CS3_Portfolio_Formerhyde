@@ -1,0 +1,28 @@
+List and define Explorer View and Editor Tab Indicators (Git)
+
+In the file explorer and on editor tabs, text colors and badges indicate the status of files relative to your source control repository
+
+List and define Editor Gutter and Minimap Indicators (Git)
+
+Small colored bars in the "gutter" (next to line numbers) and the minimap indicate changes within specific lines since the last commit
+
+List at least 5 common GitHub Octicons
+
+
+Here is a sample template for your submission:
+
+Visual Indicator
+
+Indicator Name
+
+Meaning
+
+M
+
+
+Modified (Git)
+
+The visual indicator M primarily indicates that a file has been modified since the last Git commit
+
+---------------------
+
