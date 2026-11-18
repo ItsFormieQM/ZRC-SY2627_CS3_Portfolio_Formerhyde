@@ -1,8 +1,9 @@
 from pathlib import Path
 import json
 import globalvars as globalv
-
-def dumptext(jsonname):
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+def dump_text(jsonname):
     txt = {}
     jsonname = f"lang/{jsonname}"
     json_ex = Path(jsonname)
@@ -22,16 +23,18 @@ def text_setloc(entxt,translkey):
             return globalv.text[translkey]
         except KeyError:
             return "missing!"
-def switchlang(jsonname):
+def switch_lang(jsonname):
     actualstr = ""
     for i in range(len(jsonname)):
         if jsonname[i] == ".":
             break
         actualstr += jsonname[i]
     globalv.lang = actualstr
-    dumptext(jsonname)
-def gettext(translkey):
+    dump_text(jsonname)
+def get_text(translkey):
     return globalv.text
+def reset_lang():
+    globalv.lang = "en"
 if __name__ == "__main__":
     print("dont run this directly, just import")
     raise TypeError
