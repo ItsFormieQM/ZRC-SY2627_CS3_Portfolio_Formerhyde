@@ -7,9 +7,9 @@ def dump_text(jsonname):
     txt = {}
     jsonname = f"lang/{jsonname}"
     json_ex = Path(jsonname)
-    if not json_ex.exists() and json_ex.is_file():
+    if not json_ex.exists() or not json_ex.is_file():
         print(f"error, {jsonname} not found!")
-        raise FileNotFoundError
+        print("language switch failed")
     else:
         
         with open(f"{jsonname}","r",encoding="utf-8") as file:
@@ -22,7 +22,7 @@ def text_setloc(entxt,translkey):
         try:
             return globalv.text[translkey]
         except KeyError:
-            return "missing!"
+            return f"missing text for key: \"{translkey}\""
 def switch_lang(jsonname):
     actualstr = ""
     for i in range(len(jsonname)):
