@@ -7,7 +7,7 @@ def log():
     rn = rn.strftime("%B %d, %Y and %I:%M:%S %p")
     fp = Path("history.txt")
     if fp.is_file():
-        print("test")
+        print("Logged")
         with open("history.txt","a") as file:
             file.write(f"\nProgram ran with date: {rn}")
     else:
@@ -15,6 +15,7 @@ def log():
             file.write(f"Program ran with date: {rn}")
 try:
     log()
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.system("git add .")
     msg = input("Enter commit message: ")
     if msg:
