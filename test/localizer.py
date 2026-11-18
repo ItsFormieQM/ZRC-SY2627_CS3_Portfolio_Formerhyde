@@ -37,4 +37,5 @@ def reset_lang():
     globalv.lang = "en"
 if __name__ == "__main__":
     print("dont run this directly, just import")
+    print("pls run main.py instead")
     raise TypeError
