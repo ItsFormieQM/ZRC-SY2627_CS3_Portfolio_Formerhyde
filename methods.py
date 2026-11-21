@@ -26,3 +26,11 @@ def Switch_Language():
     switch_lang(__lang[ind])
     print(text_setloc(f"Language set to","langsel_2")+" "+lang)
     pass
+def ev():
+    scope = {}
+    while True:
+        try:
+            inp = input("Input valid syntax here (type break to exit): ")
+            exec(inp,globals(),scope)
+        except TypeError:
+            print("Not valid syntax!")

@@ -14,7 +14,8 @@ while True:
     cmds = [
         text_logic_setloc("Exit","ui_exit","Exit"),
         text_logic_setloc("Switch Language","ui_sellang","Switch_Language"),
-        text_logic_setloc("Clear Terminal","ui_clear", "Clear")
+        text_logic_setloc("Clear Terminal","ui_clear", "Clear"),
+        text_logic_setloc("Run Custom Code","ui_ccode","ev")
     ]
     if debug:
         cmds.append(text_logic_setloc("Push changes to GitHub","ui_debug_push","Push"))
@@ -25,7 +26,7 @@ while True:
             return
         print(f"{text_setloc("Selected", "selected")} {cmds[indnum][0]}")
         eval(cmds[indnum][2] + "()")
-    print(text_setloc("---Command List---","cmdls_1"))
+    print(text_setloc("Command List","cmdls_1"))
     for i in range(len(cmds)):
         print(f"{i+1}. {cmds[i][0]}")
     

@@ -11,5 +11,6 @@
     "ui_sellang":"Ilis lingwahi",
     "ui_clear":"Limpyohon ang Terminal",
     "ui_debug_push":"I-push sa GitHub ang gi-himo",
-    "selected":"Na-pili:"
+    "selected":"Na-pili:",
+    "ui_ccode":"Mag-gamit ug lain nga code"
 }
