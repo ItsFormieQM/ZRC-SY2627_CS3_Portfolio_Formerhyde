@@ -16,7 +16,7 @@ def log():
 try:
     log()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    os.system("git add .")
+    
     msg = input("Enter commit message: ")
     if msg:
         os.system(f"git commit -m \"{msg}\"")
