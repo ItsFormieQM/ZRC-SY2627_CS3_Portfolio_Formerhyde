@@ -15,7 +15,7 @@ while True:
         text_logic_setloc("Exit","ui_exit","Exit"),
         text_logic_setloc("Switch Language","ui_sellang","Switch_Language"),
         text_logic_setloc("Clear Terminal","ui_clear", "Clear"),
-        text_logic_setloc("Run Custom Code","ui_ccode","ev")
+        
     ]
     if debug:
         cmds.append(text_logic_setloc("Push changes to GitHub","ui_debug_push","Push"))
