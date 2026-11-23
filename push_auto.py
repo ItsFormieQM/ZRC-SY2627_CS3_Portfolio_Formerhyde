@@ -5,32 +5,7 @@ from datetime import datetime
 now = datetime.now()
 
 # ripped straight from my game
-if False:
-
-    try:
-
-        print("lock removed")
-        pass
-    except Exception as e:
-        if type(e) is FileNotFoundError:
-            print("removed already")
-        elif type(e) is PermissionError:
-            print("close ur ide. if its closed welp smth is locking it or os issue")
-        else:
-            print("welp u got a big issue")
-        pass
-    finally:
-        print("executing stuff")
-        os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-        os.system("git add .")
-        msg = input("Enter commit message: ")
-        if msg == "":
-            msg = "Automated by the Python Script"
-        os.system(f'git commit -m "{msg}"')
-        os.system("git push origin Chapter-1 --force ")
-
-
+# take that **** out
 if True:
     try:
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
