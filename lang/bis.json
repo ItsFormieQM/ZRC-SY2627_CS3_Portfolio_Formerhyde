@@ -1,8 +1,5 @@
 {
-    "test1":"sonion uti",
-    "test2":"BAI, NA RELEASE NA SI GTA 6!",
-    "test3":"* Naa kay mail.",
-    "intro_1":"---Banko nga naay OOP ug translasyon---",
+    "intro_1":"---Testing ra i guess---",
     "indexsel_1":"Pagpili sa imong seleksyon: ",
     "langsel_1":"Pagpili ug lingwahi: ",
     "langsel_2":"Nailisdan ang lingwahi padung",
@@ -12,5 +9,6 @@
     "ui_clear":"Limpyohon ang Terminal",
     "ui_debug_push":"I-push sa GitHub ang gi-himo",
     "selected":"Na-pili:",
-    "ui_ccode":"Mag-gamit ug lain nga code"
+    "ui_ccode":"Mag-gamit ug lain nga code",
+    "ui_strlen":"Pangitaon kung unsa ka dako ang texto"
 }

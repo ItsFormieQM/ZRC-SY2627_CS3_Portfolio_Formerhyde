@@ -15,6 +15,10 @@ def Clear():
 def Push():
     os.system("python push_auto.py")
     exit()
+def strlenny():
+    inp = input("Enter string: ")
+    print(f"The length for this string is: {len(inp)}")
+    print(f"The length for this string with spacing excluded is: {len(inp.replace(" ",""))}")
 def Switch_Language():
     __lang = [
         "en.json",
@@ -26,11 +30,3 @@ def Switch_Language():
     switch_lang(__lang[ind])
     print(text_setloc(f"Language set to","langsel_2")+" "+lang)
     pass
-def ev():
-    scope = {}
-    while True:
-        try:
-            inp = input("Input valid syntax here (type break to exit): ")
-            exec(inp,globals(),scope)
-        except TypeError:
-            print("Not valid syntax!")

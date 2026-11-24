@@ -15,11 +15,11 @@ while True:
         text_logic_setloc("Exit","ui_exit","Exit"),
         text_logic_setloc("Switch Language","ui_sellang","Switch_Language"),
         text_logic_setloc("Clear Terminal","ui_clear", "Clear"),
-        
+        text_logic_setloc("String Length Finder", "ui_strlen","strlenny")
     ]
     if debug:
         cmds.append(text_logic_setloc("Push changes to GitHub","ui_debug_push","Push"))
-    print(text_setloc("---Bank with OOP + translation---","intro_1"))
+    print(text_setloc("---Test playground ig---","intro_1"))
     def execute_ind(indnum):
         if indnum >= len(cmds) or indnum < 0:
             print("Command doesn't exist!\n")
