@@ -1,0 +1,14 @@
+{
+    "intro_1":"---Testing ra i guess---",
+    "indexsel_1":"Pagpili sa imong seleksyon: ",
+    "langsel_1":"Pagpili ug lingwahi: ",
+    "langsel_2":"Nailisdan ang lingwahi padung",
+    "cmdls_1":"Lista sa mga commando.",
+    "ui_exit":"Patyon ang programa",
+    "ui_sellang":"Ilis lingwahi",
+    "ui_clear":"Limpyohon ang Terminal",
+    "ui_debug_push":"I-push sa GitHub ang gi-himo",
+    "selected":"Na-pili:",
+    "ui_ccode":"Mag-gamit ug lain nga code",
+    "ui_strlen":"Pangitaon kung unsa ka dako ang texto"
+}

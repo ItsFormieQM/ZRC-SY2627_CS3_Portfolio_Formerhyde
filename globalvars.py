@@ -8,5 +8,6 @@ text = {}
 accounts = []
 debug = True
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+langdir = None
 
 

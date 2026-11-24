@@ -5,7 +5,11 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-
+def change_langdir(path):
+    globalv.langdir = path
+    dump_text(f"{globalv.lang}.json")
+def reset_langdir():
+    globalv.langdir = None
 def dump_text(jsonname):
     txt = {}
     actualstr = ""
@@ -17,7 +21,10 @@ def dump_text(jsonname):
     if actualstr == "en":
         reset_lang()
         return
-    jsonname = f"lang/{jsonname}"
+    if globalv.langdir == None:
+        jsonname = f"lang/{jsonname}"
+    else:
+        jsonname = f"{globalv.langdir}{jsonname}"
     json_ex = Path(jsonname)
 
     if not json_ex.exists() or not json_ex.is_file():
