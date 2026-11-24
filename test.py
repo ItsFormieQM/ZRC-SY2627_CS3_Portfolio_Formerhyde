@@ -2,7 +2,7 @@ from localizer import *
 from ext import clamp
 from globalvars import *
 from methods import *
-# change_langdir("lang/Test/")
+change_langdir("lang/Test/")
 while True:
     
     msg = []
