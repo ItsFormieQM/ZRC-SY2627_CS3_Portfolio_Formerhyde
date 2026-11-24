@@ -19,6 +19,11 @@ def strlenny():
     inp = input("Enter string: ")
     print(f"The length for this string is: {len(inp)}")
     print(f"The length for this string with spacing excluded is: {len(inp.replace(" ",""))}")
+    space = 0
+    for i in range(len(inp)):
+        if inp[i] == " ":
+            space += 1
+    print("The length for this string where only spaces are counted is: " + str(space))
 def Switch_Language():
     __lang = [
         "en.json",
